@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            height: 100vh;
+            margin:0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, rgb(120, 190, 255), #a764ff);
+            background-attachment: fixed;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        form{
+            background-color: white;
+            margin-left:100px;
+            margin-right:100px;
+            margin-top:50px;
+            border: 1px solid #b8b8b8;
+            border-radius: 10px;
+            padding:20px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+        }
+        th{
+            font-size: xx-large;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); 
+        }
+        tr{
+            height: 55px;
+        }
+        td{
+            width: 300px;
+        }
+        input{
+            width:600px;
+            height:20px;
+        }
+        select{
+            width:609px;
+            height:30px;
+        }
+        .radio-group {
+            width:30px;
+            gap: 10px;
+            display: flex;
+        }
+        .check-group {
+            width:30px;
+            gap: 10px;
+            display: flex;
+        }
+        button{
+            color: white;
+            background: linear-gradient(to right, rgb(49, 118, 181), #6c33b7);
+            border-radius: 4px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border:0px;
+            height: 35px;
+            width: 200px;
+            font-size: medium;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <form>
+       <table align="center">
+            <tr>
+                <th colspan="2">REGISTRATION FORM</th>
+            </tr>
+            <tr>
+                <td><label>Name:</label></td>
+                <td><input type="text" name="name" placeholder="FirstName LastName"></td>
+            </tr>
+            <tr>
+                <td><label>Email ID:</label></td>
+                <td><input type="text" name="email" placeholder="xyz@abc.com"></td>
+            </tr>
+            <tr>
+                <td><label>Phone No.:</label></td>
+                <td><input type="number" name="phone" placeholder="1234567890"></td>
+            </tr>
+            <tr>
+                <td><label>Date of Birth:</label></td>
+                <td><input type="date" placeholder="DD-MM-YYYY"></td>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td><div class="radio-group"><input type="radio" name="Gender" value="Male">Male<input type="radio" name="Gender" value="Female">Female <input type="radio" name="Gender" value="Other">Other</div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Country:</label></td>
+                <td><select name="Country">
+                    <option selected>Choose a country</option>
+                    <option>India</option>
+                    <option>US</option>
+                    <option>China</option>
+                    <option>Russia</option>
+                    <option>Australia</option>
+                    <option>UK</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label>State:</label></td>
+                <td><input type="text" name="state"></td>
+            </tr>
+            <tr>
+                <td><label>City:</label></td>
+                <td><input type="text" name="city"></td>
+            </tr>
+       </table>
+       <div align="center">
+            <button class="btn btn-primary">SUBMIT</button>
+        </div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="form-validation.js"></script>
+</body>
+</html>
